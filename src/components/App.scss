@@ -1,0 +1,22 @@
+$drum-pads-gap: 5px;
+
+#drum-machine {
+  #display {
+    font-family: monospace;
+  }
+
+  #drum-pads {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $drum-pads-gap;
+
+    .drum-pad {
+      flex-basis: calc(33% - $drum-pads-gap);
+
+      background: orange;
+      border: 1px solid red;
+
+      border-radius: 0;
+    }
+  }
+}
