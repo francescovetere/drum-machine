@@ -1,0 +1,45 @@
+@use "../base/resets";
+
+$drum-pads-gap: 5px;
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  min-height: 100vh;
+
+  #drum-machine {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+
+    width: 300px;
+
+    #display {
+      font-family: monospace;
+    }
+  
+    #drum-pads {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: $drum-pads-gap;
+      
+      width: 100%;
+
+      .drum-pad {
+        flex-basis: calc(33% - $drum-pads-gap);
+
+        min-height: 50px;
+        background: orange;
+        border: 1px solid red;
+  
+        border-radius: 0;
+      }
+    }
+  }
+}
+

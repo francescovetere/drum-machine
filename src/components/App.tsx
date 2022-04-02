@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./App.scss";
+import "../sass/pages/App.scss";
 
 export default function App() {
   const [displayName, setDisplayName] = useState("---");
